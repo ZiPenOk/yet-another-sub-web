@@ -42,15 +42,15 @@ const initialParams: Params = {
   include: '',
   exclude: '',
   tfo: false,
-  udp: true,
-  scv: true,
+  udp: false,
+  scv: false,
   append_type: false,
-  emoji: true,
+  emoji: false,
   list: false,
   sort: false,
   expand: false,
-  classic: true,
-  fdn: true,
+  classic: false,
+  fdn: false,
 };
 
 export default function Home() {
@@ -269,6 +269,7 @@ export default function Home() {
       </Card>
       <p className="text-bold text-sm text-center">
         Made with <SwitchTheme /> by <Link isExternal href="https://github.com/ZiPenOk/yet-another-sub-web">ZiPen</Link>.
+        &include=&exclude=&emoji=true&list=false&sort=false&udp=true&scv=true&append_type=false&fdn=true&expand=false&classic=true
       </p>
     </div >
   );
