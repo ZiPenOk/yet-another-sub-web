@@ -36,4 +36,8 @@ interface Params {
     append_type: boolean;
     emoji: boolean;
     list: boolean;
+    sort: boolean;
+    expand: boolean;
+    classic: boolean;
+    fdn: boolean;
 };
