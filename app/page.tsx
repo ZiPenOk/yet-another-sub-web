@@ -29,7 +29,7 @@ import { SwitchTheme } from "@/components/SwitchTheme";
 import { createSub } from "@/app/hooks/createSub";
 import { createShortSub } from "@/app/hooks/createShortSub";
 
-const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["http://127.0.0.1:25500/sub?"]
+const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["https://api.sh1nyan.fun/sub?"]
 const initialParams: Params = {
   mode: 'easy',
   subLink: '',
@@ -42,11 +42,15 @@ const initialParams: Params = {
   include: '',
   exclude: '',
   tfo: false,
-  udp: false,
-  scv: false,
+  udp: true,
+  scv: true,
   append_type: false,
-  emoji: false,
+  emoji: true,
   list: false,
+  sort: false,
+  expand: false,
+  classic: true,
+  fdn: true,
 };
 
 export default function Home() {
@@ -264,7 +268,7 @@ export default function Home() {
         </CardFooter>
       </Card>
       <p className="text-bold text-sm text-center">
-        Made with <SwitchTheme /> by <Link isExternal href="https://github.com/DyAxy/yet-another-sub-web">DyAxy</Link>.
+        Made with <SwitchTheme /> by <Link isExternal href="https://github.com/ZiPenOk/yet-another-sub-web">ZiPen</Link>.
       </p>
     </div >
   );

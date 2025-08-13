@@ -1,6 +1,6 @@
 import { config as cfg } from '@/config'
 
-const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["http://127.0.0.1:25500/sub?"]
+const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["https://api.sh1nyan.fun/sub?"]
 
 export const createSub = (params: Params) => {
     const { url, target, backend, mode, config, include, exclude, tfo, udp, scv, append_type, emoji, list } = params;
@@ -28,6 +28,10 @@ export const createSub = (params: Params) => {
         if (append_type) flow.push('&append_type=true');
         if (emoji) flow.push('&emoji=true');
         if (list) flow.push('&list=true');
+        if (sort) flow.push('&sort=true');
+        if (expand) flow.push('&expand=true');
+        if (classic) flow.push('&classic=true');
+        if (fdn) flow.push('&fdn=true');
     }
 
     return flow.join('')

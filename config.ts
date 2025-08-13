@@ -27,15 +27,19 @@ export const config: Config = {
         { title: "显示节点类型", key: "append_type" },
         { title: "显示 Emoji 旗帜", key: "emoji" },
         { title: "仅输出为节点", key: "list" }
+        { title: "节点再次排序", key: "sort" }
+        { title: "规则写进订阅", key: "expand" }
+        { title: "生成 rule-provider", key: "classic" }
+        { title: "过滤不支持的节点", key: "fdn" }
     ],
     remoteConfig: [
         {
-            category: '通用规则',
+            category: 'Custom_OpenClash_Rules',
             items: [
                 {
-                    label: "cutethotw 全能规则",
+                    label: "Custom_OpenClash_Rules - 自用",
                     value:
-                        "https://raw.githubusercontent.com/cutethotw/ClashRule/main/GeneralClashRule.ini"
+                        "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini"
                 }
             ]
         }, {
