@@ -26,10 +26,10 @@ export const config: Config = {
         { title: "关闭证书检查", key: "scv" },
         { title: "显示节点类型", key: "append_type" },
         { title: "显示 Emoji 旗帜", key: "emoji" },
-        { title: "仅输出为节点", key: "list" }
-        { title: "节点再次排序", key: "sort" }
-        { title: "规则写进订阅", key: "expand" }
-        { title: "生成 rule-provider", key: "classic" }
+        { title: "仅输出为节点", key: "list" }, 
+        { title: "节点再次排序", key: "sort" }, 
+        { title: "规则写进订阅", key: "expand" }, 
+        { title: "生成 rule-provider", key: "classic" }, 
         { title: "过滤不支持的节点", key: "fdn" }
     ],
     remoteConfig: [
