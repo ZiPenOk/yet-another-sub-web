@@ -3,7 +3,7 @@ import { config as cfg } from '@/config'
 const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["https://api.sh1nyan.fun/sub?"]
 
 export const createSub = (params: Params) => {
-    const { url, target, backend, mode, config, include, exclude, tfo, udp, scv, append_type, emoji, list } = params;
+    const { url, target, backend, mode, config, include, exclude, tfo, udp, scv, append_type, emoji, list, sort, expand, classic, fdn } = params;
 
     if (!url) throw Error('请在输入订阅链接后再试');
     if (!target) throw Error('请在选择客户端后再试');
