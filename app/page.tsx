@@ -268,8 +268,7 @@ export default function Home() {
         </CardFooter>
       </Card>
       <p className="text-bold text-sm text-center">
-        Made with <SwitchTheme /> by <Link isExternal href="https://github.com/ZiPenOk/yet-another-sub-web">ZiPen</Link>.
-        &include=&exclude=&emoji=true&list=false&sort=false&udp=true&scv=true&append_type=false&fdn=true&expand=false&classic=true
+        Made with <SwitchTheme /> by <Link isExternal href="https://github.com/ZiPenOk/yet-another-sub-web">ZiPen</Link>.<br>&include=&exclude=&emoji=true&list=false&sort=false&udp=true&scv=true&append_type=false&fdn=true&expand=false&classic=true
       </p>
     </div >
   );
