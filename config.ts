@@ -39,7 +39,7 @@ export const config: Config = {
                 {
                     label: "Custom_OpenClash_Rules - 自用",
                     value:
-                        "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/main/cfg/Custom_Clash.ini"
+                        "https://raw.githubusercontent.com/ZiPenOk/Custom_OpenClash_Rules/dev/cfg/Custom_Clash.ini"
                 }
             ]
         }, {
