@@ -1,6 +1,6 @@
 import { config as cfg } from '@/config'
 
-const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["https://api.sh1nyan.fun/sub?"]
+const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["http://hangzhou.cstext.top:28405/sub?"]
 
 export const createSub = (params: Params) => {
     const { url, target, backend, mode, config, include, exclude, tfo, udp, scv, append_type, emoji, list, sort, expand, classic, fdn } = params;

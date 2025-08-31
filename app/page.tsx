@@ -29,7 +29,7 @@ import { SwitchTheme } from "@/components/SwitchTheme";
 import { createSub } from "@/app/hooks/createSub";
 import { createShortSub } from "@/app/hooks/createShortSub";
 
-const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["https://api.sh1nyan.fun/sub?"]
+const backends = process.env.NEXT_PUBLIC_BACKENDS?.split('|') ?? ["http://hangzhou.cstext.top:28405/sub?"]
 const initialParams: Params = {
   mode: 'easy',
   subLink: '',
