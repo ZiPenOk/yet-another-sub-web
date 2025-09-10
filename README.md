@@ -13,7 +13,7 @@
 ### 本地使用 Docker
 - Docker run方式部署
 ```
-docker run -d -p 127.0.0.1:3000:3000 --name yet-another-sub-web --restart=always moefaq/yet-another-sub-web:latest -e NEXT_PUBLIC_SHORTURL=https://suo.yt/ -e NEXT_PUBLIC_BACKENDS=http://127.0.0.1:25500/sub?
+docker run -d -p 127.0.0.1:3000:3000 --name yet-another-sub-web --restart=always moefaq/yet-another-sub-web:latest -e NEXT_PUBLIC_SHORTURL=https://suo.yt/ -e NEXT_PUBLIC_BACKENDS=https://api.sh1nyan.fun/sub?
 # 替换后端或短链接服务
 ```
 
@@ -28,7 +28,7 @@ docker compose up -d
 | NEXT_PUBLIC_SHORTURL | NEXT_PUBLIC_BACKENDS        |
 | -------------------- | --------------------------- |
 | 短链接服务，记得带 /   | 后端完整地址                 |
-| https://suo.yt/      | http://127.0.0.1:25500/sub? |
+| https://suo.yt/      | https://api.sh1nyan.fun/sub? |
 
 
 ## 常规部署
